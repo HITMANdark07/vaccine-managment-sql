@@ -635,8 +635,8 @@ app.post("/hosp_logindata", authController.isLoggedIn, (req, res) => {
   }
 });
 
-
+const PORT = 3000 || process.env.PORT;
 /*******************************************************/
-app.listen(3000, function () {
+app.listen(PORT, function () {
   console.log('Running on http://localhost:3000');
 });
